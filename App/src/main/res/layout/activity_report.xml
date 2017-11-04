@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.d105.attendancesystem.ReportActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_vertical"
+                android:text="Report"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/top"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".49"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="List of All Subjects"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".001"
+            android:background="#d3d3d3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".49"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Attandance Result"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header_lay"
+        android:background="#d3d3d3"/>
+
+    <RelativeLayout
+        android:id="@+id/subjects_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/header_lay">
+
+        <LinearLayout
+            android:id="@+id/algo_subject_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="Algorithm"
+                android:id="@+id/tv_sub_algo"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".001"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="0%"
+                android:id="@+id/tv_sub_algo_attandance"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/algo_subject_lay"
+            android:background="#d3d3d3"/>
+
+        <LinearLayout
+            android:id="@+id/comp_network_subject_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/algo_subject_lay"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="Computer Network"
+                android:id="@+id/tv_sub_comp_network"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".001"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".49"
+                android:id="@+id/tv_sub_comp_network_attandance"
+                android:gravity="center_vertical"
+                android:text="0%"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/comp_network_subject_lay"
+            android:background="#d3d3d3"/>
+
+        <LinearLayout
+            android:id="@+id/db_subject_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/comp_network_subject_lay"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="Database Management"
+                android:id="@+id/tv_sub_db_mgmt"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".001"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="0%"
+                android:id="@+id/tv_sub_db_mgmt_attandance"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/db_subject_lay"
+            android:background="#d3d3d3"/>
+
+        <LinearLayout
+            android:id="@+id/math_subject_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/db_subject_lay"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".49"
+                android:gravity="center_vertical"
+                android:text="Mathamatics"
+                android:id="@+id/tv_sub_math"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".001"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".49"
+                android:id="@+id/tv_sub_math_attandance"
+                android:gravity="center_vertical"
+                android:text="0%"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/math_subject_lay"
+            android:background="#d3d3d3"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+      <!--  <item
+            android:id="@+id/account_set"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Post_Work" />
+
+        <item
+            android:id="@+id/inbx"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Inbox" />-->
+
+        <item
+        android:id="@+id/profile"
+        android:icon="@drawable/pro"
+        android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/pro"
+            android:title="Report Score" />
+
+        <item
+            android:id="@+id/time_table"
+            android:icon="@drawable/pro"
+            android:title="Time Table" />
+
+    </group>
+
+    <item android:title="Other">
+        <menu>
+
+
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
