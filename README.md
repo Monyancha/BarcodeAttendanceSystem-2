@@ -1,6 +1,4 @@
-# Android project
-
-BarcodeAttendanceSystem-2
+# Android project:BarcodeAttendanceSystem-2
 
 # 1.Scope of Project
 The purpose of the Project is to build a systematic way of taking attendance and making a faster, easier and more efficiant way to take attendance there for a teacher can easly control the student attendance. And also student will be more organized and see the report of there attendence
