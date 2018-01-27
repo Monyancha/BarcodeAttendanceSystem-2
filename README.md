@@ -7,3 +7,5 @@ The goal of this project is to have a functioning attendance system application.
 
 # 3. The project architecture
 The architecture of B.A.S is that, the data taken from the scanner application to an online server along with the student id and subject etc... The server will then send the data to the B.A.S  for alowing the student see there report  and also this data is open for the teacher retrieve anytime required. A HashMap is used on the server side to store the source and the student information
+
+NOTE: You can check out screenshotes on the screenshotes folder
